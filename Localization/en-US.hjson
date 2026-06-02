@@ -1,0 +1,220 @@
+Mods: {
+	SoulSpeech: {
+		Items: {
+			SoulSpirit: {
+				DisplayName: Soul Spirit
+				Tooltip:
+					'''
+					Fragments of souls wandering the dungeon
+					Visible even in complete darkness
+					'''
+			}
+
+			BlueCrystalSpear: {
+				DisplayName: Blue Crystal Spear
+				Tooltip:
+					'''
+					Fires refracting crystal energy
+					(Deals 80% of the spear's damage)
+					'''
+			}
+
+			RainbowSigil: {
+				DisplayName: Rainbow Sigil
+				Tooltip:
+					'''
+					+1 life regeneration
+					+2 defense
+					+20 maximum life
+					+5% attack speed
+					+3% damage reduction
+					+5% movement speed
+					+1 max minions
+					'''
+			}
+
+			MechanicalScarf: {
+				DisplayName: Mechanical Scarf
+				Tooltip:
+					'''
+					+3 defense
+					+20% damage reduction
+					'''
+			}
+
+			MechanicalBrain: {
+				DisplayName: Mechanical Brain
+				Tooltip:
+					'''
+					+6 defense
+					25% chance to dodge attacks and inflict Brain Control for 4 seconds
+					(Vanilla Confusion effect not implemented)
+					'''
+			}
+
+			LifeCrystal: {
+				DisplayName: Life Crystal
+				Tooltip: ""
+			}
+
+			SwordIntentScroll: {
+				DisplayName: Sword Intent Scroll
+				Tooltip: ""
+			}
+
+			DemonSlayerSword: {
+				Tooltip: ""
+				DisplayName: Demon Slayer Sword
+			}
+
+			ExplosiveCharm: {
+				Tooltip: ""
+				DisplayName: Explosive Charm
+			}
+
+			ManaBracelet: {
+				Tooltip: ""
+				DisplayName: Mana Bracelet
+			}
+
+			HeartBracelet: {
+				Tooltip: ""
+				DisplayName: Heart Bracelet
+			}
+
+			BlueCrystalLegs: {
+				Tooltip: ""
+				DisplayName: Blue Crystal Legs
+			}
+
+			BlueCrystalHead: {
+				Tooltip: ""
+				DisplayName: Blue Crystal Head
+			}
+
+			BlueCrystalBody: {
+				Tooltip: ""
+				DisplayName: Blue Crystal Body
+			}
+
+			MechanicalShield: {
+				DisplayName: Mechanical Shield
+				Tooltip: ""
+			}
+
+			BlueCrystalBoomerang: {
+				Tooltip: ""
+				DisplayName: Blue Crystal Boomerang
+			}
+
+			MoltenSpear: {
+				Tooltip: ""
+				DisplayName: Molten Spear
+			}
+
+			SpearIntentScroll: {
+				Tooltip: ""
+				DisplayName: Spear Intent Scroll
+			}
+
+			NightmareOrb: {
+				Tooltip: ""
+				DisplayName: Nightmare Orb
+			}
+
+			MoltenHeart: {
+				Tooltip: ""
+				DisplayName: Molten Heart
+			}
+		}
+
+		Projectiles: {
+			BlueCrystalSpearProjectile.DisplayName: Blue Crystal Spear Projectile
+			BlueCrystalSpearProj.DisplayName: Blue Crystal Spear Proj
+			SwordIntentProj.DisplayName: Sword Intent Proj
+			DemonSlayerProj.DisplayName: Demon Slayer Proj
+			ExplosiveBlast.DisplayName: Explosive Blast
+			BlueCrystalBoomerangProj.DisplayName: Blue Crystal Boomerang Proj
+			ShockwaveProj.DisplayName: Shockwave Proj
+			MoltenSpearProj.DisplayName: Molten Spear Proj
+			LavaScytheProj.DisplayName: Lava Scythe Proj
+			SpearIntentProj.DisplayName: Spear Intent Proj
+		}
+
+		Configs: {
+			WeaponBalanceConfig: {
+				DisplayName: Weapon Balance Config
+
+				Headers: {
+					全局倍率: 全局倍率 Header
+					阶段倍率: 阶段倍率 Header
+				}
+
+				GlobalWeaponDamageMultiplier: {
+					Label: 全局武器伤害倍率
+					Tooltip: ""
+				}
+
+				PreSkeletron: {
+					Label: Pre Skeletron
+					Tooltip: ""
+				}
+
+				PostSkeletron: {
+					Label: Post Skeletron
+					Tooltip: ""
+				}
+
+				PreMech: {
+					Label: Pre Mech
+					Tooltip: ""
+				}
+
+				PostMech: {
+					Label: Post Mech
+					Tooltip: ""
+				}
+
+				PostGolem: {
+					Label: Post Golem
+					Tooltip: ""
+				}
+
+				PostMoonLord: {
+					Label: Post Moon Lord
+					Tooltip: ""
+				}
+
+				Start: {
+					Label: 开始-骷髅王前
+					Tooltip: ""
+				}
+
+				Skeletron: {
+					Label: 骷髅王后-肉山前
+					Tooltip: ""
+				}
+
+				MeatMountain: {
+					Label: 肉山后-新三王前
+					Tooltip: ""
+				}
+
+				Mech: {
+					Label: 新三王-石巨人前
+					Tooltip: ""
+				}
+
+				Golem: {
+					Label: 石巨人后-月总前
+					Tooltip: ""
+				}
+
+				MoonLord: {
+					Label: 月总后
+					Tooltip: ""
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,3 @@
+displayName = 魂言
+author = DeepSea
+version = 0.1

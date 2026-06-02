@@ -1,0 +1,240 @@
+Mods: {
+	SoulSpeech: {
+		Items: {
+			SoulSpirit: {
+				DisplayName: 魂灵
+				Tooltip:
+					'''
+					徘徊于地牢中的灵魂残片
+					在黑暗中依然清晰可见
+					'''
+			}
+
+			BlueCrystalSpear: {
+				DisplayName: 蓝晶矛
+				Tooltip:
+					'''
+					能够射出偏转的水晶能量
+					（伤害为本体的0.8）
+					'''
+			}
+
+			RainbowSigil: {
+				DisplayName: 彩虹符石
+				Tooltip:
+					'''
+					+1 生命恢复
+					+2 防御力
+					+20 最大生命值
+					+5% 攻击速度
+					+3% 伤害减免
+					+5% 移动速度
+					+1 召唤栏位
+					'''
+			}
+
+			MechanicalScarf: {
+				DisplayName: 机械围巾
+				Tooltip:
+					'''
+					+3 防御力
+					+20% 伤害减免
+					'''
+			}
+
+			MechanicalBrain: {
+				DisplayName: 机械大脑
+				Tooltip:
+					'''
+					+6 防御力
+					+25% 闪避并对自己施加4s控脑术buff
+					(原版混乱效果未实现)
+					'''
+			}
+
+			LifeCrystal: {
+				DisplayName: 生命晶石
+				Tooltip:
+					'''
+					+4 生命恢复
+					+40 最大生命值
+					'''
+			}
+
+			SwordIntentScroll: {
+				DisplayName: 剑意卷轴
+				Tooltip: 装备后，使自己使用挥舞类近战武器可以发射弹幕，伤害为当前武器的0.5。
+			}
+
+			DemonSlayerSword: {
+				Tooltip: 向前方发射剑气
+				DisplayName: 斩魔剑
+			}
+
+			ExplosiveCharm: {
+				Tooltip:
+					'''
+					50 近战伤害
+					使得自己受到伤害对周围施加爆炸，并获得2s无敌帧。
+					'''
+				DisplayName: 斩魔剑
+			}
+
+			ManaBracelet: {
+				Tooltip: 攻击敌人恢复5点魔力
+				DisplayName: 护魔手环
+			}
+
+			HeartBracelet: {
+				Tooltip: 攻击敌人恢复2点生命
+				DisplayName: 护心手环
+			}
+
+			BlueCrystalLegs: {
+				Tooltip:
+					'''
+					+1仆从上限
+					+40最大魔力
+					'''
+				DisplayName: 蓝晶护腿
+			}
+
+			BlueCrystalHead: {
+				Tooltip:
+					'''
+					+8%魔法暴击率
+					+10%召唤伤害
+					'''
+				DisplayName: 蓝晶兜帽
+			}
+
+			BlueCrystalBody: {
+				Tooltip:
+					'''
+					+10%魔法伤害
+					+1仆从上限
+					'''
+				DisplayName: 蓝晶胸甲
+			}
+
+			MechanicalShield: {
+				// DisplayName: Mechanical Shield
+				// Tooltip: ""
+			}
+
+			BlueCrystalBoomerang: {
+				// Tooltip: ""
+				// DisplayName: Blue Crystal Boomerang
+			}
+
+			MoltenSpear: {
+				// Tooltip: ""
+				// DisplayName: Molten Spear
+			}
+
+			SpearIntentScroll: {
+				// Tooltip: ""
+				// DisplayName: Spear Intent Scroll
+			}
+
+			NightmareOrb: {
+				// Tooltip: ""
+				// DisplayName: Nightmare Orb
+			}
+
+			MoltenHeart: {
+				// Tooltip: ""
+				// DisplayName: Molten Heart
+			}
+		}
+
+		Projectiles: {
+			// BlueCrystalSpearProjectile.DisplayName: Blue Crystal Spear Projectile
+			// BlueCrystalSpearProj.DisplayName: Blue Crystal Spear Proj
+			// SwordIntentProj.DisplayName: Sword Intent Proj
+			// DemonSlayerProj.DisplayName: Demon Slayer Proj
+			// ExplosiveBlast.DisplayName: Explosive Blast
+			// BlueCrystalBoomerangProj.DisplayName: Blue Crystal Boomerang Proj
+			// ShockwaveProj.DisplayName: Shockwave Proj
+			// MoltenSpearProj.DisplayName: Molten Spear Proj
+			// LavaScytheProj.DisplayName: Lava Scythe Proj
+			// SpearIntentProj.DisplayName: Spear Intent Proj
+		}
+
+		Configs: {
+			WeaponBalanceConfig: {
+				// DisplayName: Weapon Balance Config
+
+				Headers: {
+					// 全局倍率: 全局倍率 Header
+					// 阶段倍率: 阶段倍率 Header
+				}
+
+				GlobalWeaponDamageMultiplier: {
+					// Label: 全局武器伤害倍率
+					// Tooltip: ""
+				}
+
+				PreSkeletron: {
+					// Label: Pre Skeletron
+					// Tooltip: ""
+				}
+
+				PostSkeletron: {
+					// Label: Post Skeletron
+					// Tooltip: ""
+				}
+
+				PreMech: {
+					// Label: Pre Mech
+					// Tooltip: ""
+				}
+
+				PostMech: {
+					// Label: Post Mech
+					// Tooltip: ""
+				}
+
+				PostGolem: {
+					// Label: Post Golem
+					// Tooltip: ""
+				}
+
+				PostMoonLord: {
+					// Label: Post Moon Lord
+					// Tooltip: ""
+				}
+
+				Start: {
+					// Label: 开始-骷髅王前
+					// Tooltip: ""
+				}
+
+				Skeletron: {
+					// Label: 骷髅王后-肉山前
+					// Tooltip: ""
+				}
+
+				MeatMountain: {
+					// Label: 肉山后-新三王前
+					// Tooltip: ""
+				}
+
+				Mech: {
+					// Label: 新三王-石巨人前
+					// Tooltip: ""
+				}
+
+				Golem: {
+					// Label: 石巨人后-月总前
+					// Tooltip: ""
+				}
+
+				MoonLord: {
+					// Label: 月总后
+					// Tooltip: ""
+				}
+			}
+		}
+	}
+}
