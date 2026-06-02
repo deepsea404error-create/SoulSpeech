@@ -54,76 +54,111 @@ Mods: {
 
 			LifeCrystal: {
 				DisplayName: Life Crystal
-				Tooltip: ""
+				Tooltip:
+					'''
+					+4 life regeneration
+					+40 maximum life
+					'''
 			}
 
 			SwordIntentScroll: {
 				DisplayName: Sword Intent Scroll
-				Tooltip: ""
+				Tooltip: While equipped, swinging melee weapons fires a projectile dealing 0.5x the weapon's damage.
 			}
 
 			DemonSlayerSword: {
-				Tooltip: ""
+				Tooltip: Fires a sword aura forward
 				DisplayName: Demon Slayer Sword
 			}
 
 			ExplosiveCharm: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					50 melee damage
+					Taking damage causes an explosion around you and grants 2s of immunity frames.
+					'''
 				DisplayName: Explosive Charm
 			}
 
 			ManaBracelet: {
-				Tooltip: ""
+				Tooltip: Attacking enemies restores 5 mana
 				DisplayName: Mana Bracelet
 			}
 
 			HeartBracelet: {
-				Tooltip: ""
+				Tooltip: Attacking enemies restores 2 life
 				DisplayName: Heart Bracelet
 			}
 
 			BlueCrystalLegs: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					+1 max minions
+					+40 maximum mana
+					'''
 				DisplayName: Blue Crystal Legs
 			}
 
 			BlueCrystalHead: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					+8% magic critical strike chance
+					+10% summon damage
+					'''
 				DisplayName: Blue Crystal Head
 			}
 
 			BlueCrystalBody: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					+10% magic damage
+					+1 max minions
+					'''
 				DisplayName: Blue Crystal Body
 			}
 
 			MechanicalShield: {
 				DisplayName: Mechanical Shield
-				Tooltip: ""
+				Tooltip:
+					'''
+					+4 defense
+					+66% melee damage
+					+4% melee critical strike chance
+					Double-tap a direction to dash into enemies
+					Mutually exclusive with the Shield of Cthulhu
+					'''
 			}
 
 			BlueCrystalBoomerang: {
-				Tooltip: ""
+				Tooltip: Multiple boomerangs can exist at once
 				DisplayName: Blue Crystal Boomerang
 			}
 
 			MoltenSpear: {
-				Tooltip: ""
+				Tooltip: Throws a burning molten spear
 				DisplayName: Molten Spear
 			}
 
 			SpearIntentScroll: {
-				Tooltip: ""
+				Tooltip: Using spear weapons also fires a spear intent projectile (0.5x the weapon's damage)
 				DisplayName: Spear Intent Scroll
 			}
 
 			NightmareOrb: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					All damage +25%
+					But damage taken +15%
+					'''
 				DisplayName: Nightmare Orb
 			}
 
 			MoltenHeart: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					All damage +20%
+					But maximum life -20%
+					'''
 				DisplayName: Molten Heart
 			}
 		}
@@ -139,82 +174,6 @@ Mods: {
 			MoltenSpearProj.DisplayName: Molten Spear Proj
 			LavaScytheProj.DisplayName: Lava Scythe Proj
 			SpearIntentProj.DisplayName: Spear Intent Proj
-		}
-
-		Configs: {
-			WeaponBalanceConfig: {
-				DisplayName: Weapon Balance Config
-
-				Headers: {
-					全局倍率: 全局倍率 Header
-					阶段倍率: 阶段倍率 Header
-				}
-
-				GlobalWeaponDamageMultiplier: {
-					Label: 全局武器伤害倍率
-					Tooltip: ""
-				}
-
-				PreSkeletron: {
-					Label: Pre Skeletron
-					Tooltip: ""
-				}
-
-				PostSkeletron: {
-					Label: Post Skeletron
-					Tooltip: ""
-				}
-
-				PreMech: {
-					Label: Pre Mech
-					Tooltip: ""
-				}
-
-				PostMech: {
-					Label: Post Mech
-					Tooltip: ""
-				}
-
-				PostGolem: {
-					Label: Post Golem
-					Tooltip: ""
-				}
-
-				PostMoonLord: {
-					Label: Post Moon Lord
-					Tooltip: ""
-				}
-
-				Start: {
-					Label: 开始-骷髅王前
-					Tooltip: ""
-				}
-
-				Skeletron: {
-					Label: 骷髅王后-肉山前
-					Tooltip: ""
-				}
-
-				MeatMountain: {
-					Label: 肉山后-新三王前
-					Tooltip: ""
-				}
-
-				Mech: {
-					Label: 新三王-石巨人前
-					Tooltip: ""
-				}
-
-				Golem: {
-					Label: 石巨人后-月总前
-					Tooltip: ""
-				}
-
-				MoonLord: {
-					Label: 月总后
-					Tooltip: ""
-				}
-			}
 		}
 	}
 }

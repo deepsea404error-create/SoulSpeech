@@ -77,7 +77,7 @@ Mods: {
 					50 近战伤害
 					使得自己受到伤害对周围施加爆炸，并获得2s无敌帧。
 					'''
-				DisplayName: 斩魔剑
+				DisplayName: 斩魔符
 			}
 
 			ManaBracelet: {
@@ -118,33 +118,48 @@ Mods: {
 			}
 
 			MechanicalShield: {
-				// DisplayName: Mechanical Shield
-				// Tooltip: ""
+				DisplayName: 机械护盾
+				Tooltip:
+					'''
+					+4 防御力
+					+66% 近战伤害
+					+4% 近战暴击率
+					双击方向键冲刺撞击敌人
+					与克苏鲁之盾互斥
+					'''
 			}
 
 			BlueCrystalBoomerang: {
-				// Tooltip: ""
-				// DisplayName: Blue Crystal Boomerang
+				Tooltip: 可同时存在多个回旋镖
+				DisplayName: 蓝晶回旋镖
 			}
 
 			MoltenSpear: {
-				// Tooltip: ""
-				// DisplayName: Molten Spear
+				Tooltip: 投掷燃烧的熔岩长矛
+				DisplayName: 熔岩长矛
 			}
 
 			SpearIntentScroll: {
-				// Tooltip: ""
-				// DisplayName: Spear Intent Scroll
+				Tooltip: 使用长矛类武器时附带发射矛意弹幕（伤害为武器的0.5倍）
+				DisplayName: 矛意卷轴
 			}
 
 			NightmareOrb: {
-				// Tooltip: ""
-				// DisplayName: Nightmare Orb
+				Tooltip:
+					'''
+					所有伤害 +25%
+					但受到的伤害 +15%
+					'''
+				DisplayName: 噩梦法球
 			}
 
 			MoltenHeart: {
-				// Tooltip: ""
-				// DisplayName: Molten Heart
+				Tooltip:
+					'''
+					所有伤害 +20%
+					但最大生命值 -20%
+					'''
+				DisplayName: 熔岩之心
 			}
 		}
 
@@ -159,82 +174,6 @@ Mods: {
 			// MoltenSpearProj.DisplayName: Molten Spear Proj
 			// LavaScytheProj.DisplayName: Lava Scythe Proj
 			// SpearIntentProj.DisplayName: Spear Intent Proj
-		}
-
-		Configs: {
-			WeaponBalanceConfig: {
-				// DisplayName: Weapon Balance Config
-
-				Headers: {
-					// 全局倍率: 全局倍率 Header
-					// 阶段倍率: 阶段倍率 Header
-				}
-
-				GlobalWeaponDamageMultiplier: {
-					// Label: 全局武器伤害倍率
-					// Tooltip: ""
-				}
-
-				PreSkeletron: {
-					// Label: Pre Skeletron
-					// Tooltip: ""
-				}
-
-				PostSkeletron: {
-					// Label: Post Skeletron
-					// Tooltip: ""
-				}
-
-				PreMech: {
-					// Label: Pre Mech
-					// Tooltip: ""
-				}
-
-				PostMech: {
-					// Label: Post Mech
-					// Tooltip: ""
-				}
-
-				PostGolem: {
-					// Label: Post Golem
-					// Tooltip: ""
-				}
-
-				PostMoonLord: {
-					// Label: Post Moon Lord
-					// Tooltip: ""
-				}
-
-				Start: {
-					// Label: 开始-骷髅王前
-					// Tooltip: ""
-				}
-
-				Skeletron: {
-					// Label: 骷髅王后-肉山前
-					// Tooltip: ""
-				}
-
-				MeatMountain: {
-					// Label: 肉山后-新三王前
-					// Tooltip: ""
-				}
-
-				Mech: {
-					// Label: 新三王-石巨人前
-					// Tooltip: ""
-				}
-
-				Golem: {
-					// Label: 石巨人后-月总前
-					// Tooltip: ""
-				}
-
-				MoonLord: {
-					// Label: 月总后
-					// Tooltip: ""
-				}
-			}
 		}
 	}
 }

@@ -37,7 +37,7 @@ namespace SoulSpeech.Content.Items.Accessories
             player.lifeRegen += 1;
 
             // 防御 +2
-            player.statDefense += 2000;
+            player.statDefense += 2;
 
             // 最大生命 +20
             player.statLifeMax2 += 20;

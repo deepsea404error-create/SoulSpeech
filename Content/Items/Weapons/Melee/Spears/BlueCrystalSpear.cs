@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
-using SoulSpeech.Common.BaseItems;
-using SoulSpeech.Common;
 using SoulSpeech.Content.Items.Materials;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -15,14 +13,8 @@ using Terraria;
 namespace SoulSpeech.Content.Items.Weapons.Melee.Spears
 {
 
-    public class BlueCrystalSpear : StageWeapon
+    public class BlueCrystalSpear : ModItem
     {
-        // 这是“骷髅王后 - 肉山前”的武器
-        protected override WeaponStage Stage => WeaponStage.Skeletron;
-
-        // 不带任何倍率的基础伤害
-        protected override int BaseDamage => 22;
-
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
@@ -30,8 +22,7 @@ namespace SoulSpeech.Content.Items.Weapons.Melee.Spears
 
         public override void SetDefaults()
         {
-            // 先应用倍率计算伤害
-            ApplyDamageScaling();
+            Item.damage = 22;
 
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.useAnimation = 18;

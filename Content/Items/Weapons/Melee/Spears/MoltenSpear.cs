@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
-using SoulSpeech.Common;
-using SoulSpeech.Common.BaseItems;
 using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
@@ -13,18 +11,11 @@ using Terraria.DataStructures;
 
 namespace SoulSpeech.Content.Items.Weapons.Melee.Spears
 {
-    internal class MoltenSpear : StageWeapon
+    internal class MoltenSpear : ModItem
     {
-        // 这是“骷髅王后 - 肉山前”的武器
-        protected override WeaponStage Stage => WeaponStage.Skeletron;
-
-        // 不带任何倍率的基础伤害
-        protected override int BaseDamage => 39;
-
         public override void SetDefaults()
         {
-            // 先应用倍率计算伤害
-            ApplyDamageScaling();
+            Item.damage = 39;
             Item.DamageType = DamageClass.Melee;
 
             Item.width = 74;

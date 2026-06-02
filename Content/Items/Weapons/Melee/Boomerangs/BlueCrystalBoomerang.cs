@@ -67,7 +67,7 @@ namespace SoulSpeech.Content.Items.Weapons.Melee.Boomerangs
         {
             CreateRecipe()
                 .AddIngredient(ModContent.ItemType<Items.Materials.SoulSpirit>(), 10)
-                .AddIngredient(ItemID.MythrilBar, 12)   // 或 OrichalcumBar
+                .AddIngredient(ItemID.DemoniteBar, 12)   // 或 OrichalcumBar
                 .AddIngredient(ItemID.ShadowScale, 7)   // 或 TissueSample
                 .AddTile(TileID.Anvils)
                 .Register();
