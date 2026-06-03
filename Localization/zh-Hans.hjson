@@ -235,6 +235,7 @@ Mods: {
 			JudgmentExplosion.DisplayName: 裁决爆炸
 			SacredBulletProj.DisplayName: 圣裁子弹
 			HolyLightSword.DisplayName: 圣光剑
+			// VoidShard.DisplayName: Void Shard
 		}
 	}
 }

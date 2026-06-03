@@ -234,6 +234,7 @@ Mods: {
 			JudgmentExplosion.DisplayName: Judgment Explosion
 			SacredBulletProj.DisplayName: Sacred Judgment Bullet
 			HolyLightSword.DisplayName: Holy Light Sword
+			VoidShard.DisplayName: Void Shard
 		}
 	}
 }

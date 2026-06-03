@@ -74,17 +74,18 @@ namespace SoulSpeech.Content.Projectiles
             if (Main.myPlayer != Projectile.owner)
                 return;
 
-            // 以武器原始伤害存入 ai[0]，供虚空球爆炸使用
+            // 吸附 tick 伤害 = 剑气伤害 × TickFraction（会随增伤缩放）
+            int tickDamage = Math.Max(1, (int)(Projectile.damage * VoidOrb.TickFraction));
             Projectile orb = Projectile.NewProjectileDirect(
                 Projectile.GetSource_FromThis(),
                 target.Center,
                 Vector2.Zero,
                 ModContent.ProjectileType<VoidOrb>(),
-                10,  // 吸附 tick 真实伤害每次 10 点（护甲穿透由 VoidOrb.ModifyHitNPC 处理）
+                tickDamage,
                 3f,
                 Projectile.owner
             );
-            orb.ai[0] = Projectile.damage; // 记录原始伤害用于爆炸
+            orb.ai[0] = Projectile.damage; // 记录完整剑气伤害，供死亡喷射附弹派生
         }
 
         public override bool PreDraw(ref Color lightColor)
