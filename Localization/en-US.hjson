@@ -79,7 +79,6 @@ Mods: {
 				DisplayName: Long Night
 				Tooltip:
 					'''
-					100 melee damage
 					Fires a Long Night Aura toward the cursor on swing
 					The aura spawns a Void Orb at the enemy's location on hit
 					Void Orbs pull nearby enemies inward and explode when they expire
@@ -176,6 +175,16 @@ Mods: {
 					'''
 				DisplayName: Molten Heart
 			}
+
+			PhantomShuriken: {
+				DisplayName: Phantom Shuriken
+				Tooltip:
+					'''
+					Throws a shuriken trailed by a spinning outer ring
+					Hitting an enemy spawns 2-3 auto-homing orbs
+					The outer ring and homing orbs each deal 80% weapon damage
+					'''
+			}
 		}
 
 		Projectiles: {
@@ -191,6 +200,9 @@ Mods: {
 			SpearIntentProj.DisplayName: Spear Intent Proj
 			LongNightAura.DisplayName: Long Night Aura
 			VoidOrb.DisplayName: Void Orb
+			PhantomShurikenProj.DisplayName: Phantom Shuriken
+			PhantomShurikenOuter.DisplayName: Phantom Shuriken Outer Ring
+			PhantomHomingOrb.DisplayName: Phantom Homing Orb
 		}
 	}
 }
