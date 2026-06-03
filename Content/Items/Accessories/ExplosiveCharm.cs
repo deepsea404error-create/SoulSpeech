@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria.ID;
+﻿using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using SoulSpeech.Common.Players;
@@ -25,6 +20,15 @@ namespace SoulSpeech.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetModPlayer<ExplosiveCharmPlayer>().hasExplosiveCharm = true;
+        }
+
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.CrossNecklace);
+            recipe.AddIngredient(ItemID.Explosives, 5);
+            recipe.AddTile(TileID.Anvils);
+            recipe.Register();
         }
     }
 }
