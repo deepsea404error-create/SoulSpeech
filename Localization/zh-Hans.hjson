@@ -75,6 +75,17 @@ Mods: {
 				DisplayName: 斩魔剑
 			}
 
+			LongNightSword: {
+				DisplayName: 长夜
+				Tooltip:
+					'''
+					100 近战伤害
+					挥砍时朝鼠标方向释放长夜剑气
+					剑气命中敌人后在其位置生成虚空球
+					虚空球会吸附周围的敌人，并在消亡时爆炸
+					'''
+			}
+
 			ExplosiveCharm: {
 				Tooltip:
 					'''
@@ -178,6 +189,8 @@ Mods: {
 			// MoltenSpearProj.DisplayName: Molten Spear Proj
 			// LavaScytheProj.DisplayName: Lava Scythe Proj
 			// SpearIntentProj.DisplayName: Spear Intent Proj
+			// LongNightAura.DisplayName: Long Night Aura
+			// VoidOrb.DisplayName: Void Orb
 		}
 	}
 }
