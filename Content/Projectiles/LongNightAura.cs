@@ -35,7 +35,7 @@ namespace SoulSpeech.Content.Projectiles
 
             // 使用本地无敌帧，避免与虚空球的 tick 伤害共享全局无敌帧
             Projectile.usesLocalNPCImmunity = true;
-            Projectile.localNPCHitCooldown = 60; // 每个敌人最多每秒被剑气命中一次
+            Projectile.localNPCHitCooldown = 10; // 每个敌人最多每秒被剑气命中一次
         }
 
         public override void AI()

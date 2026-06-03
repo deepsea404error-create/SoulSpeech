@@ -185,6 +185,33 @@ Mods: {
 					The outer ring and homing orbs each deal 80% weapon damage
 					'''
 			}
+
+			JudgmentPistol: {
+				DisplayName: Judgment Pistol
+				Tooltip:
+					'''
+					93 ranged damage
+					Fast firing speed
+					40% chance not to consume ammo
+					Every 3rd shot fires a homing Judgment Bolt dealing 200% damage
+					'''
+			}
+
+			SacredJudgmentBullet: {
+				DisplayName: Sacred Judgment Bullet
+				Tooltip:
+					'''
+					Penetrates 2 enemies
+					20% chance on hit to summon a Holy Light Sword that dives at the enemy
+					'''
+			}
+		}
+
+		Buffs: {
+			JudgmentDebuff: {
+				DisplayName: Judgment
+				Description: Losing 50 life per second
+			}
 		}
 
 		Projectiles: {
@@ -203,6 +230,10 @@ Mods: {
 			PhantomShurikenProj.DisplayName: Phantom Shuriken
 			PhantomShurikenOuter.DisplayName: Phantom Shuriken Outer Ring
 			PhantomHomingOrb.DisplayName: Phantom Homing Orb
+			JudgmentBolt.DisplayName: Judgment Bolt
+			JudgmentExplosion.DisplayName: Judgment Explosion
+			SacredBulletProj.DisplayName: Sacred Judgment Bullet
+			HolyLightSword.DisplayName: Holy Light Sword
 		}
 	}
 }

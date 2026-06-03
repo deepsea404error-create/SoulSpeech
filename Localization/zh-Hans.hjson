@@ -185,6 +185,34 @@ Mods: {
 					外旋与制导球均造成武器伤害的 80%
 					'''
 			}
+
+			JudgmentPistol: {
+				DisplayName: 裁决手枪
+				Tooltip:
+					'''
+					93 远程伤害
+					攻速较快
+					40% 概率不消耗弹药
+					每第 3 次发射一枚 200% 伤害的追踪裁决弹
+					'''
+			}
+
+			SacredJudgmentBullet: {
+				DisplayName: 圣裁子弹
+				Tooltip:
+					'''
+					穿透 3 个敌人
+					命中敌人有 50% 概率召唤朝敌人俯冲的圣光剑
+					圣光剑造成 70% 伤害 
+					'''
+			}
+		}
+
+		Buffs: {
+			JudgmentDebuff: {
+				DisplayName: 裁决
+				Description: 每秒流失 50 点生命
+			}
 		}
 
 		Projectiles: {
@@ -203,6 +231,10 @@ Mods: {
 			PhantomShurikenProj.DisplayName: 魅影手里剑
 			PhantomShurikenOuter.DisplayName: 魅影手里剑外旋
 			PhantomHomingOrb.DisplayName: 魅影制导球
+			JudgmentBolt.DisplayName: 裁决弹
+			JudgmentExplosion.DisplayName: 裁决爆炸
+			SacredBulletProj.DisplayName: 圣裁子弹
+			HolyLightSword.DisplayName: 圣光剑
 		}
 	}
 }
