@@ -25,25 +25,15 @@ namespace SoulSpeech.Content.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            // 标记装备状态
             player.GetModPlayer<MechanicalBrainPlayer>().mechanicalBrainEquipped = true;
 
-            // 防御 +6
-            player.statDefense += 6;
+            player.statDefense += 4;
 
-            // TODO 原版混沌之脑的“困惑”效果???
-        }
+            // 暴击率 +12%（全伤害类型）
+            player.GetCritChance(DamageClass.Generic) += 12f;
 
-        public override bool CanEquipAccessory(Player player, int slot, bool modded)
-        {
-            // 禁止与混沌之脑同时装备
-            for (int i = 0; i < player.armor.Length; i++)
-            {
-                if (player.armor[i].type == ItemID.BrainOfConfusion)
-                    return false;
-            }
-
-            return true;
+            // 召唤伤害 +12%
+            player.GetDamage(DamageClass.Summon) += 0.12f;
         }
 
         public override void AddRecipes()

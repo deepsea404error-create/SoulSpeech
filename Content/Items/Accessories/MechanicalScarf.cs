@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria.ID;
+﻿using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
+using SoulSpeech.Common.Players;
 
 namespace SoulSpeech.Content.Items.Accessories
 {
@@ -29,31 +25,13 @@ namespace SoulSpeech.Content.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            // 20% 伤害减免
+            player.GetModPlayer<MechanicalScarfPlayer>().hasMechanicalScarf = true;
+
+            // 覆盖蠕虫围巾的 17% 减伤效果（Player.wormScarf 在 PostUpdateEquips 中被清除）
             player.endurance += 0.20f;
 
-            // 防御 +3
-            player.statDefense += 3;
-        }
-
-        /// <summary>
-        /// 控制是否允许装备该饰品
-        /// </summary>
-        public override bool CanEquipAccessory(Player player, int slot, bool modded)
-        {
-            // 遍历玩家当前已装备的饰品栏
-            for (int i = 0; i < player.armor.Length; i++)
-            {
-                Item equippedItem = player.armor[i];
-
-                // 如果已经装备了蠕虫围巾，则禁止装备机械围巾
-                if (equippedItem.type == ItemID.WormScarf)
-                {
-                    return false;
-                }
-            }
-
-            return true;
+            // 防御 +2（升级加成）
+            player.statDefense += 2;
         }
 
         public override void AddRecipes()

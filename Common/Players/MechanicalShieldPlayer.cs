@@ -1,8 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
 using Terraria;
@@ -16,10 +11,10 @@ namespace SoulSpeech.Common.Players
         public const int DashRight = 2;
         public const int DashLeft = 3;
 
-        // ====== 冲刺参数（贴近克苏鲁之盾手感，可微调） ======
-        public const int DashCooldown = 50;       // 冲刺冷却（帧）
-        public const int DashDuration = 35;       // 冲刺持续/残影时间（帧）
-        public const float DashVelocity = 11.5f;  // 冲刺初速度
+        // ====== 冲刺参数 ======
+        public const int DashCooldown = 50;
+        public const int DashDuration = 35;
+        public const float DashVelocity = 11.5f;
 
         // ====== 状态变量 ======
         public bool MechanicalShieldEquipped;
@@ -28,8 +23,10 @@ namespace SoulSpeech.Common.Players
         public int DashDelay = 0;
         public int DashTimer = 0;
 
-        // 防止一次冲刺多次撞击
         private bool hasHitEnemy = false;
+
+        // 由 PostUpdateEquips 每帧检测，供 CanUseDash 使用
+        private bool hasNinjaGearEquipped;
 
         // ================= Reset =================
         public override void ResetEffects()
@@ -37,7 +34,6 @@ namespace SoulSpeech.Common.Players
             MechanicalShieldEquipped = false;
             DashDir = -1;
 
-            // 仅检测双击左/右（与克苏鲁之盾一致，纯水平冲刺）
             if (Player.controlRight && Player.releaseRight &&
                 Player.doubleTapCardinalTimer[DashRight] < 15 &&
                 Player.doubleTapCardinalTimer[DashLeft] == 0)
@@ -48,10 +44,29 @@ namespace SoulSpeech.Common.Players
                 DashDir = DashLeft;
         }
 
+        // 优先级：忍者大师 > 机械护盾 > 克苏鲁之盾
+        public override void PostUpdateEquips()
+        {
+            if (!MechanicalShieldEquipped) return;
+
+            hasNinjaGearEquipped = false;
+            bool hasEoCShield = false;
+
+            for (int i = 3; i < 10 + Player.extraAccessorySlots; i++)
+            {
+                int type = Player.armor[i]?.type ?? 0;
+                if (type == ItemID.MasterNinjaGear) hasNinjaGearEquipped = true;
+                if (type == ItemID.EoCShield) hasEoCShield = true;
+            }
+
+            // 若未检测到忍者大师，压制克苏鲁之盾的冲刺 dashType
+            if (hasEoCShield && !hasNinjaGearEquipped)
+                Player.dashType = DashID.None;
+        }
+
         // ================= 冲刺主逻辑 =================
         public override void PreUpdateMovement()
         {
-            // 启动冲刺：给一个水平初速度的爆发
             if (CanUseDash() && DashDir != -1 && DashDelay == 0)
             {
                 Player.velocity.X = (DashDir == DashRight ? 1f : -1f) * DashVelocity;
@@ -61,16 +76,13 @@ namespace SoulSpeech.Common.Players
                 hasHitEnemy = false;
             }
 
-            // 冲刺期间
             if (DashTimer > 0)
             {
                 DashTimer--;
 
-                // 克苏鲁盾残影
                 Player.eocDash = DashTimer;
                 Player.armorEffectDrawShadowEOCShield = true;
 
-                // 只设速度上限，不强制维持：靠原版摩擦自然衰减，手感更顺滑
                 if (Player.velocity.X > DashVelocity)
                     Player.velocity.X = DashVelocity;
                 else if (Player.velocity.X < -DashVelocity)
@@ -105,16 +117,14 @@ namespace SoulSpeech.Common.Players
                         Damage = 66,
                         Knockback = 12f,
                         HitDirection = Player.direction,
-                        Crit = Main.rand.NextBool(25), // ≈4%暴击
+                        Crit = Main.rand.NextBool(25),
                         DamageType = DamageClass.Melee
                     };
 
                     npc.StrikeNPC(hit);
 
-                    // 回弹
                     Player.velocity.X = -Player.direction * 8f;
 
-                    // 4秒无敌
                     Player.immune = true;
                     Player.immuneTime = 240;
 
@@ -128,7 +138,7 @@ namespace SoulSpeech.Common.Players
         private bool CanUseDash()
         {
             return MechanicalShieldEquipped
-                && Player.dashType == DashID.None     // 不和克盾 / 忍者鞋冲突
+                && !hasNinjaGearEquipped   // 忍者大师优先级更高
                 && !Player.setSolar
                 && !Player.mount.Active;
         }

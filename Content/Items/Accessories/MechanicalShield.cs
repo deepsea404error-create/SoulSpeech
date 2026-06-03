@@ -38,23 +38,10 @@ namespace SoulSpeech.Content.Items.Accessories
             player.GetModPlayer<MechanicalShieldPlayer>().MechanicalShieldEquipped = true;
         }
 
-        // ====== 与克苏鲁之盾互斥 ======
-        public override bool CanEquipAccessory(Player player, int slot, bool modded)
-        {
-            // 检查玩家是否已经装备克苏鲁之盾
-            for (int i = 3; i < 10 + player.extraAccessorySlots; i++)
-            {
-                Item other = player.armor[i];
-                if (other != null && other.type == ItemID.EoCShield)
-                    return false;
-            }
-            return true;
-        }
-
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddIngredient(ItemID.AnkhShield)
+                .AddIngredient(ItemID.EoCShield) // 克苏鲁之盾
                 .AddIngredient(3354) // 机械车轮片
                 .AddIngredient(3355) // 机械车体片
                 .AddIngredient(3356) // 机械车池片

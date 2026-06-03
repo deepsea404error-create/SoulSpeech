@@ -37,8 +37,9 @@ Mods: {
 				DisplayName: Mechanical Scarf
 				Tooltip:
 					'''
-					+3 defense
+					+2 defense
 					+20% damage reduction
+					Overrides Worm Scarf's damage reduction when both are equipped
 					'''
 			}
 
@@ -46,9 +47,12 @@ Mods: {
 				DisplayName: Mechanical Brain
 				Tooltip:
 					'''
-					+6 defense
-					25% chance to dodge attacks and inflict Brain Control for 4 seconds
-					(Vanilla Confusion effect not implemented)
+					+4 defense
+					+12% critical strike chance
+					+12% summon damage
+					25% chance to fully dodge attacks and inflict Brain Control for 3 seconds
+					Taking damage Confuses nearby enemies
+					Overrides Brain of Confusion's dodge when both are equipped
 					'''
 			}
 
@@ -125,7 +129,7 @@ Mods: {
 					+66% melee damage
 					+4% melee critical strike chance
 					Double-tap a direction to dash into enemies
-					Mutually exclusive with the Shield of Cthulhu
+					Overrides Shield of Cthulhu's dash when both are equipped
 					'''
 			}
 
