@@ -253,6 +253,15 @@ Mods: {
 					'''
 			}
 
+			StarVein: {
+				DisplayName: 星脉
+				Tooltip:
+					'''
+					每次发射 3 支箭
+					伴随发射 3 发脉冲矢
+					'''
+			}
+
 			NightSoul: {
 				DisplayName: 夜魂
 				Tooltip:
@@ -304,6 +313,7 @@ Mods: {
 			NetherVoidSword.DisplayName: 冥灯虚空剑
 			SkyFeatherProj.DisplayName: 天羽射弹
 			NightSoulBolt.DisplayName: 夜魂弹
+			// StarVeinPulse.DisplayName: Star Vein Pulse
 		}
 	}
 }

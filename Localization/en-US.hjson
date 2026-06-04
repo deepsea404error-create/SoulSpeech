@@ -253,6 +253,15 @@ Mods: {
 					'''
 			}
 
+			StarVein: {
+				DisplayName: Star Vein
+				Tooltip:
+					'''
+					Fires 3 arrows per shot
+					Accompanied by 3 Pulse Bolts
+					'''
+			}
+
 			NightSoul: {
 				DisplayName: Night Soul
 				Tooltip:
@@ -304,6 +313,7 @@ Mods: {
 			NetherVoidSword.DisplayName: Nether Void Sword
 			SkyFeatherProj.DisplayName: Sky Feather Bolt
 			NightSoulBolt.DisplayName: Night Soul Bolt
+			StarVeinPulse.DisplayName: Star Vein Pulse
 		}
 	}
 }
