@@ -262,6 +262,26 @@ Mods: {
 					'''
 			}
 
+			NeonSkirt: {
+				DisplayName: 霓裳
+				Tooltip:
+					'''
+					发射 3 支箭
+					从天落下 3 发霓裳矢
+					霓裳矢可穿墙追踪，命中后释放皇家共鸣
+					'''
+			}
+
+			FlowingCherryArrow: {
+				DisplayName: 流樱箭
+				Tooltip:
+					'''
+					不受重力影响
+					造成 3 秒酸性毒液
+					命中后朝四角释放追踪花瓣（30% 伤害）
+					'''
+			}
+
 			NightSoul: {
 				DisplayName: 夜魂
 				Tooltip:
@@ -314,6 +334,10 @@ Mods: {
 			SkyFeatherProj.DisplayName: 天羽射弹
 			NightSoulBolt.DisplayName: 夜魂弹
 			// StarVeinPulse.DisplayName: Star Vein Pulse
+			NeonSkirtProj.DisplayName: 霓裳矢
+			FlowingCherryArrowProj.DisplayName: 流樱箭
+			FlowingCherryPetal.DisplayName: 流樱花瓣
+			NeonResonance.DisplayName: 霓裳共鸣
 		}
 	}
 }

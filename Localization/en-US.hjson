@@ -262,6 +262,26 @@ Mods: {
 					'''
 			}
 
+			NeonSkirt: {
+				DisplayName: Neon Skirt
+				Tooltip:
+					'''
+					Fires 3 arrows per shot
+					Calls down 3 Neon Arrows from the sky
+					Neon Arrows phase through walls, track enemies, and release Royal Resonance on hit
+					'''
+			}
+
+			FlowingCherryArrow: {
+				DisplayName: Flowing Cherry Arrow
+				Tooltip:
+					'''
+					Not affected by gravity
+					Inflicts Venom for 3 seconds
+					On hit, releases 4 tracking petals at diagonal angles (30% damage)
+					'''
+			}
+
 			NightSoul: {
 				DisplayName: Night Soul
 				Tooltip:
@@ -314,6 +334,10 @@ Mods: {
 			SkyFeatherProj.DisplayName: Sky Feather Bolt
 			NightSoulBolt.DisplayName: Night Soul Bolt
 			StarVeinPulse.DisplayName: Star Vein Pulse
+			NeonSkirtProj.DisplayName: Neon Arrow
+			FlowingCherryArrowProj.DisplayName: Flowing Cherry Arrow
+			FlowingCherryPetal.DisplayName: Flowing Cherry Petal
+			NeonResonance.DisplayName: Neon Resonance
 		}
 	}
 }
