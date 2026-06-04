@@ -234,6 +234,24 @@ Mods: {
 					另有 20% 概率伴随发射一发浴火矢
 					'''
 			}
+
+			SkyFeatherTome: {
+				DisplayName: 天羽书
+				Tooltip:
+					'''
+					速度适中
+					发射 3 枚小角度散开的天羽射弹
+					'''
+			}
+
+			NightSoul: {
+				DisplayName: 夜魂
+				Tooltip:
+					'''
+					发射一枚追踪敌人的夜魂弹
+					命中后爆散，并朝四周释放 5 道暗影焰（60% 伤害）
+					'''
+			}
 		}
 
 		Buffs: {
@@ -275,6 +293,8 @@ Mods: {
 			// VoidShard.DisplayName: Void Shard
 			NetherVoidBolt.DisplayName: 虚空弹
 			NetherVoidSword.DisplayName: 冥灯虚空剑
+			SkyFeatherProj.DisplayName: 天羽射弹
+			NightSoulBolt.DisplayName: 夜魂弹
 		}
 	}
 }

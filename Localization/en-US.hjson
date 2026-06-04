@@ -234,6 +234,24 @@ Mods: {
 					20% chance to also fire an Inferno Bolt
 					'''
 			}
+
+			SkyFeatherTome: {
+				DisplayName: Sky Feather Tome
+				Tooltip:
+					'''
+					Moderate firing speed
+					Fires 3 sky feather bolts in a small spread
+					'''
+			}
+
+			NightSoul: {
+				DisplayName: Night Soul
+				Tooltip:
+					'''
+					Fires a homing Night Soul bolt
+					On hit it bursts and releases 5 Shadowflames (60% damage) in all directions
+					'''
+			}
 		}
 
 		Buffs: {
@@ -275,6 +293,8 @@ Mods: {
 			VoidShard.DisplayName: Void Shard
 			NetherVoidBolt.DisplayName: Void Bolt
 			NetherVoidSword.DisplayName: Nether Void Sword
+			SkyFeatherProj.DisplayName: Sky Feather Bolt
+			NightSoulBolt.DisplayName: Night Soul Bolt
 		}
 	}
 }
