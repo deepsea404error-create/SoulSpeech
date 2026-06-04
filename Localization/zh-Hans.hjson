@@ -1,6 +1,16 @@
 Mods: {
 	SoulSpeech: {
 		Items: {
+			NetherLamp: {
+				DisplayName: 冥灯
+				Tooltip:
+					'''
+					发射 3-4 枚可穿墙的追踪虚空弹
+					每枚命中后从天落下 1-2 发冥灯虚空剑（60% 伤害）
+					并施加冥火
+					'''
+			}
+
 			SoulSpirit: {
 				DisplayName: 魂灵
 				Tooltip:
@@ -213,6 +223,15 @@ Mods: {
 				DisplayName: 裁决
 				Description: 每秒流失 50 点生命
 			}
+
+			NetherFlameDebuff: {
+				DisplayName: 冥火
+				Description:
+					'''
+					每秒流失 50 点生命
+					防御清零；移动速度降低 25%（对 Boss 无效）
+					'''
+			}
 		}
 
 		Projectiles: {
@@ -236,6 +255,8 @@ Mods: {
 			SacredBulletProj.DisplayName: 圣裁子弹
 			HolyLightSword.DisplayName: 圣光剑
 			// VoidShard.DisplayName: Void Shard
+			NetherVoidBolt.DisplayName: 虚空弹
+			NetherVoidSword.DisplayName: 冥灯虚空剑
 		}
 	}
 }

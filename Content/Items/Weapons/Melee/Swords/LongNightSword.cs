@@ -14,7 +14,7 @@ namespace SoulSpeech.Content.Items.Weapons.Melee.Swords
     {
         public override void SetDefaults()
         {
-            Item.damage = 100;
+            Item.damage = 94;
             Item.DamageType = DamageClass.Melee;
 
             Item.width = 100;

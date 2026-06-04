@@ -1,6 +1,16 @@
 Mods: {
 	SoulSpeech: {
 		Items: {
+			NetherLamp: {
+				DisplayName: Nether Lamp
+				Tooltip:
+					'''
+					Fires 3-4 homing void bolts that phase through walls
+					Each bolt calls down 1-2 Nether Void Swords on hit (60% damage)
+					and inflicts Nether Flame
+					'''
+			}
+
 			SoulSpirit: {
 				DisplayName: Soul Spirit
 				Tooltip:
@@ -212,6 +222,15 @@ Mods: {
 				DisplayName: Judgment
 				Description: Losing 50 life per second
 			}
+
+			NetherFlameDebuff: {
+				DisplayName: Nether Flame
+				Description:
+					'''
+					Losing 50 life per second
+					Defense reduced to zero; 25% slower (bosses immune to slow)
+					'''
+			}
 		}
 
 		Projectiles: {
@@ -235,6 +254,8 @@ Mods: {
 			SacredBulletProj.DisplayName: Sacred Judgment Bullet
 			HolyLightSword.DisplayName: Holy Light Sword
 			VoidShard.DisplayName: Void Shard
+			NetherVoidBolt.DisplayName: Void Bolt
+			NetherVoidSword.DisplayName: Nether Void Sword
 		}
 	}
 }

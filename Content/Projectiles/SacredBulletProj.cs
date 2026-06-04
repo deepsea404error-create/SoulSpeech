@@ -27,6 +27,13 @@ namespace SoulSpeech.Content.Projectiles
             Projectile.tileCollide = false; // 穿墙
             Projectile.ignoreWater = true;
 
+            // 本地无敌帧：每发子弹独立结算，不污染目标的全局无敌帧(immune[owner])。
+            // 否则 penetrate>1 的子弹命中会给目标上 10 帧全局无敌(Projectile.cs:11447)，
+            // 把同一玩家的所有后续子弹限流到约 6 次/秒，导致高射速下 DPS 远低于原版单穿子弹。
+            // -1 表示单发子弹对每个敌人整生命周期只命中一次（配合 penetrate 3 = 最多穿 3 个不同敌人）。
+            Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = -1;
+
             Projectile.extraUpdates = 1;
         }
 
