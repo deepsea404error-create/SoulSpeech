@@ -240,7 +240,16 @@ Mods: {
 				Tooltip:
 					'''
 					Moderate firing speed
-					Fires 3 sky feather bolts in a small spread
+					Fires 2 sky feather bolts in a small spread
+					'''
+			}
+
+			FlameTome: {
+				DisplayName: Flame Tome
+				Tooltip:
+					'''
+					66% chance to fire an Imp fireball
+					33% chance to fire an Inferno bolt dealing 1.5x damage
 					'''
 			}
 

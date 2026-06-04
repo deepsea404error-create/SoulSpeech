@@ -19,8 +19,8 @@ namespace SoulSpeech.Content.Items.Weapons.Magic.Books
             Item.width = 40;
             Item.height = 40;
 
-            Item.useTime = 30;
-            Item.useAnimation = 30;
+            Item.useTime = 25;
+            Item.useAnimation = 25;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.autoReuse = true;
 

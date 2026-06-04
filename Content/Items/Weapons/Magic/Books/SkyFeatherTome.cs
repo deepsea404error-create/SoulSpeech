@@ -7,11 +7,11 @@ using SoulSpeech.Content.Projectiles;
 
 namespace SoulSpeech.Content.Items.Weapons.Magic.Books
 {
-    // 天羽书：法师武器。每次施放发射 3 枚天羽射弹，呈小角度扇形散开。
+    // 天羽书：法师武器。每次施放发射 2 枚天羽射弹，呈小角度扇形散开。
     internal class SkyFeatherTome : ModItem
     {
-        private const int ShotCount = 3;          // 每次发射的射弹数量
-        private const float SpreadDegrees = 4f;   // 扇形半张角（度）
+        private const int ShotCount = 2;          // 每次发射的射弹数量
+        private const float SpreadDegrees = 5f;   // 扇形半张角（度）
         private const float JitterDegrees = 2f;   // 单发随机抖动上限（度）
 
         public override void SetDefaults()
