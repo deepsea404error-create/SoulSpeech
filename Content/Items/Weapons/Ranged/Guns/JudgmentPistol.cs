@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using SoulSpeech.Content.Projectiles;
 
-namespace SoulSpeech.Content.Items.Weapons.Ranged
+namespace SoulSpeech.Content.Items.Weapons.Ranged.Guns
 {
     internal class JudgmentPistol : ModItem
     {
@@ -16,12 +16,13 @@ namespace SoulSpeech.Content.Items.Weapons.Ranged
         {
             Item.damage = 93;
             Item.DamageType = DamageClass.Ranged;
+            Item.crit = 12;
 
             Item.width = 50;
             Item.height = 30;
 
-            Item.useTime = 14;       // 攻速较快
-            Item.useAnimation = 14;
+            Item.useTime = 10;
+            Item.useAnimation = 10;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.autoReuse = true;
 

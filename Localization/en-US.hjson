@@ -215,6 +215,25 @@ Mods: {
 					20% chance on hit to summon a Holy Light Sword that dives at the enemy
 					'''
 			}
+
+			FlameDragon: {
+				DisplayName: Flame Dragon
+				Tooltip:
+					'''
+					Very fast firing speed with very weak knockback
+					Every 5th shot adds a scatter burst (5 bullets, small spread)
+					'''
+			}
+
+			Dragonblaze: {
+				DisplayName: Dragonblaze
+				Tooltip:
+					'''
+					Very fast firing speed
+					30% chance per shot to trigger a scatter burst (5 bullets)
+					20% chance to also fire an Inferno Bolt
+					'''
+			}
 		}
 
 		Buffs: {
