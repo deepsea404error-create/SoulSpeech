@@ -317,7 +317,16 @@ Mods: {
 				Tooltip:
 					'''
 					Fires 3 lasers per shot in a small spread
-					Every 5th shot additionally fires an Electrosphere Missile dealing 200% damage
+					Every 3rd shot additionally fires an Electrosphere Missile dealing 250% damage
+					'''
+			}
+
+			Shadow: {
+				DisplayName: Shadow
+				Tooltip:
+					'''
+					Fires 3 bullets per trigger pull
+					Every 3rd trigger pull adds a 150% damage Shadow Beam
 					'''
 			}
 		}
