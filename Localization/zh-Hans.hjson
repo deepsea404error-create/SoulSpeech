@@ -290,6 +290,27 @@ Mods: {
 					命中后爆散，并朝四周释放 5 道暗影焰（60% 伤害）
 					'''
 			}
+
+			LunarRadiance: {
+				DisplayName: 月华
+				Tooltip:
+					'''
+					发射一道中心射线，外缠一枚螺旋弹
+					螺旋弹命中时爆散，并从屏幕外召唤月相
+					月相会追踪被命中的敌人
+					'''
+			}
+
+			PaleNight: {
+				DisplayName: 苍夜
+				Tooltip:
+					'''
+					投掷出苍夜枪
+					苍夜枪在飞行的前 1 秒不受重力影响
+					命中后插入敌人、炸出苍夜爆炸，并施加 3 秒月蚀
+					月蚀最多叠加 8 层，每层造成大量持续伤害
+					'''
+			}
 		}
 
 		Buffs: {
@@ -305,6 +326,11 @@ Mods: {
 					每秒流失 50 点生命
 					防御清零；移动速度降低 25%（对 Boss 无效）
 					'''
+			}
+
+			LunarEclipseDebuff: {
+				DisplayName: 月蚀
+				Description: 每层每秒流失 100 点生命（最多 8 层）
 			}
 		}
 
@@ -338,6 +364,12 @@ Mods: {
 			FlowingCherryArrowProj.DisplayName: 流樱箭
 			FlowingCherryPetal.DisplayName: 流樱花瓣
 			NeonResonance.DisplayName: 霓裳共鸣
+			PaleNightSpear.DisplayName: 苍夜枪
+			PaleNightExplosion.DisplayName: 苍夜爆炸
+			LunarCenterBolt.DisplayName: 月华中心射线
+			LunarSpiral.DisplayName: 月华螺旋
+			LunarPhase.DisplayName: 月相
+			LunarPhaseExplosion.DisplayName: 月相爆炸
 		}
 	}
 }

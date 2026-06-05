@@ -290,6 +290,27 @@ Mods: {
 					On hit it bursts and releases 5 Shadowflames (60% damage) in all directions
 					'''
 			}
+
+			LunarRadiance: {
+				DisplayName: Lunar Radiance
+				Tooltip:
+					'''
+					Fires a central beam wrapped by a spiraling bolt
+					The spiral bursts on hit and summons a Lunar Phase from off-screen
+					that homes in on the struck enemy
+					'''
+			}
+
+			PaleNight: {
+				DisplayName: Pale Night
+				Tooltip:
+					'''
+					Throws a Pale Night lance
+					The lance ignores gravity for its first second
+					On hit it embeds, bursts into a Pale Night explosion, and inflicts Lunar Eclipse for 3 seconds
+					Lunar Eclipse stacks up to 8 times, each stack dealing heavy damage over time
+					'''
+			}
 		}
 
 		Buffs: {
@@ -305,6 +326,11 @@ Mods: {
 					Losing 50 life per second
 					Defense reduced to zero; 25% slower (bosses immune to slow)
 					'''
+			}
+
+			LunarEclipseDebuff: {
+				DisplayName: Lunar Eclipse
+				Description: Losing 100 life per second per stack (up to 8 stacks)
 			}
 		}
 
@@ -338,6 +364,12 @@ Mods: {
 			FlowingCherryArrowProj.DisplayName: Flowing Cherry Arrow
 			FlowingCherryPetal.DisplayName: Flowing Cherry Petal
 			NeonResonance.DisplayName: Neon Resonance
+			PaleNightSpear.DisplayName: Pale Night Lance
+			PaleNightExplosion.DisplayName: Pale Night Explosion
+			LunarCenterBolt.DisplayName: Lunar Beam
+			LunarSpiral.DisplayName: Lunar Spiral
+			LunarPhase.DisplayName: Lunar Phase
+			LunarPhaseExplosion.DisplayName: Lunar Phase Explosion
 		}
 	}
 }
