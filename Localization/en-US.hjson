@@ -311,6 +311,15 @@ Mods: {
 					Lunar Eclipse stacks up to 8 times, each stack dealing heavy damage over time
 					'''
 			}
+
+			MagneticStormGun: {
+				DisplayName: Magnetic Storm Gun
+				Tooltip:
+					'''
+					Fires 3 lasers per shot in a small spread
+					Every 5th shot additionally fires an Electrosphere Missile dealing 200% damage
+					'''
+			}
 		}
 
 		Buffs: {
