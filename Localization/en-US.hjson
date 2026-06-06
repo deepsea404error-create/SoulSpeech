@@ -329,6 +329,15 @@ Mods: {
 					Every 3rd trigger pull adds a 150% damage Shadow Beam
 					'''
 			}
+
+			KnightBow: {
+				DisplayName: Knight Bow
+				Tooltip:
+					'''
+					Fires 2 arrows per shot in a small spread
+					Every 3rd shot adds a Sandstorm Arrow, spawning a 2s sandstorm on hit
+					'''
+			}
 		}
 
 		Buffs: {
@@ -388,6 +397,8 @@ Mods: {
 			LunarSpiral.DisplayName: Lunar Spiral
 			LunarPhase.DisplayName: Lunar Phase
 			LunarPhaseExplosion.DisplayName: Lunar Phase Explosion
+			SandstormArrow.DisplayName: Sandstorm Arrow
+			Sandstorm.DisplayName: Sandstorm
 		}
 	}
 }

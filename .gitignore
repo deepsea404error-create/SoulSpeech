@@ -364,3 +364,6 @@ FodyWeavers.xsd
 # 项目文档目录（不参与版本管理）
 .doc/
 docs/
+# AI工具
+.opencode/
+.claude/

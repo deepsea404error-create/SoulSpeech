@@ -329,6 +329,15 @@ Mods: {
 					每第 3 次发射追加 1 发 150% 伤害的暗影光束
 					'''
 			}
+
+			KnightBow: {
+				DisplayName: 奈特之弦
+				Tooltip:
+					'''
+					每次发射 2 支箭矢（小角度散开）
+					每 3 次发射追加 1 枚沙暴矢，命中产生 2 秒沙暴
+					'''
+			}
 		}
 
 		Buffs: {
@@ -388,6 +397,8 @@ Mods: {
 			LunarSpiral.DisplayName: 月华螺旋
 			LunarPhase.DisplayName: 月相
 			LunarPhaseExplosion.DisplayName: 月相爆炸
+			SandstormArrow.DisplayName: 沙暴矢
+			Sandstorm.DisplayName: 沙暴
 		}
 	}
 }
