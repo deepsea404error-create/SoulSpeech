@@ -338,6 +338,25 @@ Mods: {
 					每 3 次发射追加 1 枚沙暴矢，命中产生 2 秒沙暴
 					'''
 			}
+
+			CobwebSword: {
+				DisplayName: 蛛网剑
+				Tooltip:
+					'''
+					每 2 次挥击追加 1 枚蛛网弹
+					蛛网弹命中产生持续 1 秒的蛛网（3 段伤害）
+					'''
+			}
+
+			CobwebBinder: {
+				DisplayName: 蛛网束缚者
+				Tooltip:
+					'''
+					每次发射 3-4 发子弹（12° 散开）
+					每 2 次发射伴随 1 枚蛛网弹
+					蛛网弹命中产生持续 1 秒的蛛网（3 段伤害）
+					'''
+			}
 		}
 
 		Buffs: {
@@ -399,6 +418,8 @@ Mods: {
 			LunarPhaseExplosion.DisplayName: 月相爆炸
 			SandstormArrow.DisplayName: 沙暴矢
 			Sandstorm.DisplayName: 沙暴
+			CobwebBullet.DisplayName: 蛛网弹
+			Cobweb.DisplayName: 蛛网
 		}
 	}
 }

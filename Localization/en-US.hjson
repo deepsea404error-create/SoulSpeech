@@ -338,6 +338,25 @@ Mods: {
 					Every 3rd shot adds a Sandstorm Arrow, spawning a 2s sandstorm on hit
 					'''
 			}
+
+			CobwebSword: {
+				DisplayName: Cobweb Sword
+				Tooltip:
+					'''
+					Every 2nd swing adds a Cobweb Bullet
+					On hit, the bullet spawns a 1s cobweb (3 damage ticks)
+					'''
+			}
+
+			CobwebBinder: {
+				DisplayName: Cobweb Binder
+				Tooltip:
+					'''
+					Fires 3-4 bullets per shot in a 12° spread
+					Every 2nd shot adds a Cobweb Bullet
+					On hit, the bullet spawns a 1s cobweb (3 damage ticks)
+					'''
+			}
 		}
 
 		Buffs: {
@@ -399,6 +418,8 @@ Mods: {
 			LunarPhaseExplosion.DisplayName: Lunar Phase Explosion
 			SandstormArrow.DisplayName: Sandstorm Arrow
 			Sandstorm.DisplayName: Sandstorm
+			CobwebBullet.DisplayName: Cobweb Bullet
+			Cobweb.DisplayName: Cobweb
 		}
 	}
 }

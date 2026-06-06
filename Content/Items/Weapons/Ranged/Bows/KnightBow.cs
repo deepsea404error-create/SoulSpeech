@@ -7,7 +7,7 @@ using SoulSpeech.Content.Projectiles;
 
 namespace SoulSpeech.Content.Items.Weapons.Ranged.Bows
 {
-    // 奈特之弦：每次发射 2 支箭矢（小角度散开）；每 3 次发射追加 1 枚沙暴矢，命中产生 2 秒沙暴。
+    // 奈特之弦：每次发射 2 支箭矢（小角度散开）；每 4 次发射追加 1 枚沙暴矢，命中产生 2 秒沙暴。
     internal class KnightBow : ModItem
     {
         private int shotCounter;
@@ -22,7 +22,7 @@ namespace SoulSpeech.Content.Items.Weapons.Ranged.Bows
             Item.height = 92;
 
             Item.useTime = 17;
-            Item.useAnimation = 18;
+            Item.useAnimation = 17;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.autoReuse = true;
 
@@ -58,9 +58,9 @@ namespace SoulSpeech.Content.Items.Weapons.Ranged.Bows
                 Projectile.NewProjectile(source, spawnPos, arrowVel, type, damage, knockback, player.whoAmI);
             }
 
-            // 每 3 次发射追加 1 枚沙暴矢（在本次 2 支箭之后紧接发射），速度为普通箭矢 2 倍
+            // 每 4 次发射追加 1 枚沙暴矢（在本次 2 支箭之后紧接发射），速度为普通箭矢 2 倍
             shotCounter++;
-            if (shotCounter >= 3)
+            if (shotCounter >= 4)
             {
                 shotCounter = 0;
                 Projectile.NewProjectile(source, position, velocity * 2f,
