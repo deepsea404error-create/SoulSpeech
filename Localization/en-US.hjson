@@ -386,6 +386,21 @@ Mods: {
 					On hit, spawns an Electrosphere at the target dealing 50% of the whip's damage
 					'''
 			}
+
+			LongWhipGlove: {
+				DisplayName: Long Whip Glove
+				Tooltip: Increases whip range by 20%
+			}
+
+			LifeScroll: {
+				DisplayName: Life Scroll
+				Tooltip:
+					'''
+					+20 maximum life
+					+1 minion slot
+					+1 minion knockback
+					'''
+			}
 		}
 
 		Buffs: {

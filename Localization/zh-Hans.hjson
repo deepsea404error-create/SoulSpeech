@@ -386,6 +386,21 @@ Mods: {
 					命中时在目标处生成一个电圈，造成鞭子 50% 的伤害
 					'''
 			}
+
+			LongWhipGlove: {
+				DisplayName: 长鞭手套
+				Tooltip: 增加 20% 鞭子长度
+			}
+
+			LifeScroll: {
+				DisplayName: 生命卷轴
+				Tooltip:
+					'''
+					+20 最大生命值
+					+1 召唤栏位
+					+1 仆从击退
+					'''
+			}
 		}
 
 		Buffs: {
