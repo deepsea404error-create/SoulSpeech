@@ -377,6 +377,15 @@ Mods: {
 					命中有 15% 概率施加 3 秒裁决
 					'''
 			}
+
+			MagneticStormWhip: {
+				DisplayName: 磁暴鞭
+				Tooltip:
+					'''
+					召唤标记伤害 +25，标记暴击率 +10%
+					命中时在目标处生成一个电圈，造成鞭子 50% 的伤害
+					'''
+			}
 		}
 
 		Buffs: {
@@ -407,6 +416,11 @@ Mods: {
 			RadianceMinionBuff: {
 				DisplayName: 辉曜
 				Description: 一把辉曜之刃为你而战
+			}
+
+			MagneticStormWhipDebuff: {
+				DisplayName: 磁暴
+				Description: 受到你的召唤物更多伤害
 			}
 		}
 
@@ -453,6 +467,7 @@ Mods: {
 			BlueSkullBolt.DisplayName: 蓝骨水矢
 			// BlueSkull.DisplayName: Blue Skull
 			RadianceMinion.DisplayName: 辉曜之刃
+			MagneticStormWhipProj.DisplayName: 磁暴鞭
 		}
 	}
 }

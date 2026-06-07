@@ -20,8 +20,8 @@ namespace SoulSpeech.Content.Items.Weapons.Summon
             Item.damage = 50;
             Item.DamageType = DamageClass.Summon;
             Item.mana = 0;
-            Item.width = 50;
-            Item.height = 124;
+            Item.width = 86;
+            Item.height = 86;
             Item.useTime = 36;
             Item.useAnimation = 36;
             Item.useStyle = ItemUseStyleID.Swing;
@@ -46,10 +46,10 @@ namespace SoulSpeech.Content.Items.Weapons.Summon
         // UseStyle 在原版挥舞旋转之后调用，所以 += 能生效；* direction 保证朝左时镜像一致。
         public override void UseStyle(Player player, Rectangle heldItemFrame)
         {
-            // 把挥舞位置向内(贴近身体)再上移一点，更像用手握着挥：
-            // x 乘 direction 保证朝左时也是向内偏移；y 向上固定 -6。
-            player.itemLocation += new Vector2(-25f * player.direction, 0f);
-            player.itemRotation += MathHelper.PiOver4 * player.direction;
+            // 把挥舞位置向内(贴近身体)再下移一点，更像用手握着挥：
+            // 必须用 += 在原版算好的手部世界坐标上做偏移；若用 = 会把贴图画到世界原点而看不见。
+            // x 乘 direction 保证朝左时也是向内偏移；
+            player.itemLocation += new Vector2(-3f * player.direction, 3f);
         }
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {

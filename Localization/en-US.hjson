@@ -377,6 +377,15 @@ Mods: {
 					15% chance on hit to inflict Judgment for 3 seconds
 					'''
 			}
+
+			MagneticStormWhip: {
+				DisplayName: Magnetic Storm Whip
+				Tooltip:
+					'''
+					Summon tag damage +25, +10% tag critical strike chance
+					On hit, spawns an Electrosphere at the target dealing 50% of the whip's damage
+					'''
+			}
 		}
 
 		Buffs: {
@@ -407,6 +416,11 @@ Mods: {
 			RadianceMinionBuff: {
 				DisplayName: Radiance
 				Description: A radiant blade fights for you
+			}
+
+			MagneticStormWhipDebuff: {
+				DisplayName: Magnetic Storm
+				Description: Takes increased damage from your minions
 			}
 		}
 
@@ -453,6 +467,7 @@ Mods: {
 			BlueSkullBolt.DisplayName: Blue Skull Bolt
 			BlueSkull.DisplayName: Blue Skull
 			RadianceMinion.DisplayName: Radiance
+			MagneticStormWhipProj.DisplayName: Magnetic Storm Whip
 		}
 	}
 }
