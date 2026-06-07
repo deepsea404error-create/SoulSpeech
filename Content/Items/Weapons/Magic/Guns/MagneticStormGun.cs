@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace SoulSpeech.Content.Items.Weapons.Magic.Guns
 {
-    // 磁暴枪：法师枪械。每次发射 3 枚激光；每第 3 次额外发射 1 枚 250% 伤害的电圈导弹。
+    // 磁暴枪：法师枪械。每次发射 3 枚激光；每第 5 次额外发射 1 枚 250% 伤害的电圈导弹。
     internal class MagneticStormGun : ModItem
     {
         private const float SpreadDegrees = 6f; // 激光散开角度上限（度）
@@ -55,7 +55,7 @@ namespace SoulSpeech.Content.Items.Weapons.Magic.Guns
                     ProjectileID.LaserMachinegunLaser, damage, knockback, player.whoAmI);
             }
 
-            // 每第 3 次额外发射 1 枚 250% 伤害的电圈导弹
+            // 每第 5 次额外发射 1 枚 250% 伤害的电圈导弹
             shotCounter++;
             if (shotCounter >= 5)
             {

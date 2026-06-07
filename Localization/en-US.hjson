@@ -317,7 +317,7 @@ Mods: {
 				Tooltip:
 					'''
 					Fires 3 lasers per shot in a small spread
-					Every 3rd shot additionally fires an Electrosphere Missile dealing 250% damage
+					Every 5th shot additionally fires an Electrosphere Missile dealing 250% damage
 					'''
 			}
 
@@ -357,6 +357,16 @@ Mods: {
 					On hit, the bullet spawns a 1s cobweb (3 damage ticks)
 					'''
 			}
+
+			BlueBoneStaff: {
+				DisplayName: Blue Bone Staff
+				Tooltip:
+					'''
+					Uses 1 minion slot
+					Summons a Blue Skull that fires Water Bolts at enemies
+					Bolts deal summon damage
+					'''
+			}
 		}
 
 		Buffs: {
@@ -377,6 +387,11 @@ Mods: {
 			LunarEclipseDebuff: {
 				DisplayName: Lunar Eclipse
 				Description: Losing 100 life per second per stack (up to 8 stacks)
+			}
+
+			BlueSkullMinionBuff: {
+				DisplayName: Blue Skull
+				Description: A skull fights for you
 			}
 		}
 
@@ -420,6 +435,8 @@ Mods: {
 			Sandstorm.DisplayName: Sandstorm
 			CobwebBullet.DisplayName: Cobweb Bullet
 			Cobweb.DisplayName: Cobweb
+			BlueSkullBolt.DisplayName: Blue Skull Bolt
+			BlueSkull.DisplayName: Blue Skull
 		}
 	}
 }

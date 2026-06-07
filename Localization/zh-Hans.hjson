@@ -317,7 +317,7 @@ Mods: {
 				Tooltip:
 					'''
 					每次发射 3 枚激光（小角度散开）
-					每第 3 次额外发射 1 枚 250% 伤害的电圈导弹
+					每第 5 次额外发射 1 枚 250% 伤害的电圈导弹
 					'''
 			}
 
@@ -357,6 +357,16 @@ Mods: {
 					蛛网弹命中产生持续 1 秒的蛛网（3 段伤害）
 					'''
 			}
+
+			BlueBoneStaff: {
+				DisplayName: 蓝骨法杖
+				Tooltip:
+					'''
+					消耗 1 个召唤栏位
+					召唤 1 只蓝色骷髅头，它会向敌人发射水矢
+					水矢造成召唤伤害
+					'''
+			}
 		}
 
 		Buffs: {
@@ -377,6 +387,11 @@ Mods: {
 			LunarEclipseDebuff: {
 				DisplayName: 月蚀
 				Description: 每层每秒流失 100 点生命（最多 8 层）
+			}
+
+			BlueSkullMinionBuff: {
+				DisplayName: 蓝色骷髅头
+				Description: 一只骷髅头为你而战
 			}
 		}
 
@@ -420,6 +435,8 @@ Mods: {
 			Sandstorm.DisplayName: 沙暴
 			CobwebBullet.DisplayName: 蛛网弹
 			Cobweb.DisplayName: 蛛网
+			BlueSkullBolt.DisplayName: 蓝骨水矢
+			// BlueSkull.DisplayName: Blue Skull
 		}
 	}
 }
