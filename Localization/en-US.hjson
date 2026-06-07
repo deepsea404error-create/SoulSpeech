@@ -367,6 +367,16 @@ Mods: {
 					Bolts deal summon damage
 					'''
 			}
+
+			Radiance: {
+				DisplayName: Radiance
+				Tooltip:
+					'''
+					Uses 1 minion slot
+					Summons a radiant blade that orbits you and swoops to slash nearby enemies
+					15% chance on hit to inflict Judgment for 3 seconds
+					'''
+			}
 		}
 
 		Buffs: {
@@ -392,6 +402,11 @@ Mods: {
 			BlueSkullMinionBuff: {
 				DisplayName: Blue Skull
 				Description: A skull fights for you
+			}
+
+			RadianceMinionBuff: {
+				DisplayName: Radiance
+				Description: A radiant blade fights for you
 			}
 		}
 
@@ -437,6 +452,7 @@ Mods: {
 			Cobweb.DisplayName: Cobweb
 			BlueSkullBolt.DisplayName: Blue Skull Bolt
 			BlueSkull.DisplayName: Blue Skull
+			RadianceMinion.DisplayName: Radiance
 		}
 	}
 }

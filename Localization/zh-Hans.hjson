@@ -367,6 +367,16 @@ Mods: {
 					水矢造成召唤伤害
 					'''
 			}
+
+			Radiance: {
+				DisplayName: 辉曜
+				Tooltip:
+					'''
+					消耗 1 个召唤栏位
+					召唤 1 把辉曜之刃，绕你旋转并俯冲挥砍附近敌人
+					命中有 15% 概率施加 3 秒裁决
+					'''
+			}
 		}
 
 		Buffs: {
@@ -392,6 +402,11 @@ Mods: {
 			BlueSkullMinionBuff: {
 				DisplayName: 蓝色骷髅头
 				Description: 一只骷髅头为你而战
+			}
+
+			RadianceMinionBuff: {
+				DisplayName: 辉曜
+				Description: 一把辉曜之刃为你而战
 			}
 		}
 
@@ -437,6 +452,7 @@ Mods: {
 			Cobweb.DisplayName: 蛛网
 			BlueSkullBolt.DisplayName: 蓝骨水矢
 			// BlueSkull.DisplayName: Blue Skull
+			RadianceMinion.DisplayName: 辉曜之刃
 		}
 	}
 }
